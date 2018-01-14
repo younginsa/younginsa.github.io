@@ -30,33 +30,44 @@ table {
 	border-spacing: 0;
 }
 /*Default setting for reset browser. Code starts here!--*/
+/*
+.BGimage{
+
+	background: url('source/marrige_BG.jpg') repeat top center;
+  background-size: 20vw auto;
+  position: fixed;
+	left: 0;
+  right: 0;
+  z-index: 1;
+}
+*/
 
 
-.headTag{
-  width: 200px;
-  height: 100px;
-  margin-top: 100px;
-  margin-left: 30px;
-  background-color: yellow;
-  /* Rotate div */
-  -ms-transform: rotate(7deg); /* IE 9 */
-  -webkit-transform: rotate(7deg); /* Safari 3-8 */
-  transform: rotate(20deg);
-  font-family: 'Lobster', cursive;
-  text-align: left;
+.content:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url('source/sweethome.jpeg');
+  background-size: 30vw auto;
+  width: 100%;
+  height: 100%;
+  filter: blur(1px) grayscale(1);
+
 }
 
-.bottomTag{
-  text-align: right;
-  margin-top: 60px;
+.content {
+  overflow: auto;
+  position: relative;
 }
+
+
 
 .bodyHead{
-  width: 100%;
-  height: 1300px;
-  /*background-color: rgb(255, 88, 17);*/
-  background: url('source/marrige_BG.jpg') no-repeat; center center;
-  background-size: 100% auto;
+
   font-family: 'Lobster', cursive;
 }
 
@@ -104,22 +115,15 @@ table {
   align-self: flex-start;
 }
 
-.links{
-  font-family: 'Lobster', cursive;
-  color: rgb(211, 211, 211);
-  text-align: center;
-  line-height: 350%;
-}
-
 .circle {
   display: block;
-	width: 70vw;
-	height: 70vw;
-	background: rgb(255, 251, 209);
-	-moz-border-radius: 35vw;
-	-webkit-border-radius: 35vw;
-	border-radius: 35vw;
-  line-height: 70vw;
+	width: 50vw;
+	height: 50vw;
+	background: rgba(255, 255, 232, .7);
+	-moz-border-radius: 30vw;
+	-webkit-border-radius: 30vw;
+	border-radius: 25vw;
+  line-height: 50vw;
   color: white;
   font-size: 30vw;
   text-align: center;
@@ -127,35 +131,34 @@ table {
 
 .CirOne{
   margin-left: auto;
-  margin-top: 70px;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 .CirTwo{
   margin-right: auto;
   margin-top: 50px;
   margin-bottom: 50px;
+
+}
+
+.CirThree{
+  margin: auto;
 }
 
 
-.GIF{
-  width: 100%;
-  height: 1000px;
-  /*background-color: rgb(255, 88, 17);*/
-  background: url('source/onetofourGIF.gif') no-repeat; center center fixed;
-  background-size: 100% auto;
-  text-align: center;
-  font-family: 'Lobster', cursive;}
 
 
-.lyricA{
-    width: 100%;
-    height: 800px;
-    background: linear-gradient(rgba(255,255,255,0), rgba(207,255,165,0.8), rgba(255,255,255,0));
-    font-family: 'Pacifico', cursive;
-    color: rgb(249, 94, 86);
-    line-height: 350%;
+.lyric{
+    width: 50vw;
+    height: auto;
+    background: rgba(255, 255, 232, .7);
+		font-family: 'Amatic SC', cursive;
+    color: rgb(0, 0, 0);
+    line-height: 200%;
     font-size: 2rem;
     text-align: center;
+		margin: auto;
+		margin-top: 100px;
   }
 
   #pac-man {
@@ -170,67 +173,48 @@ table {
   border-top-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-}
-
-
-
-.lyricB{
-  width: 100%;
-  height: 400px;
-  background-color: #e4fff4;
-  font-family: 'Megrim', cursive;
-  color: rgb(249, 94, 86);
-  line-height: 350%;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.lyricB:hover {
-    background-color: #fffde4;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
-}
-
-.lyricC{
-  margin: 0;
-  font-family: sans-serif;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.triangle{
-  display: block;
-  width: 0;
-  height: 0;
-  border-left: 25vw solid transparent;
-  border-right: 25vw solid transparent;
-  border-top: 50vw solid #ffb5b5;
-  margin: auto;
-  margin-top: 450px;
-}
-
-
-.lyricD{
-  margin: auto;
-  margin-top: 300px;
-  text-align: center;
-  font-size: 5rem;
+	animation: rotate 1s linear infinite alternate;
 
 }
 
 
-.lyricE{
-  display: block;
-  width: 100%;
-  height: 1000px;
-  text-align: center;
+.B{
+  background: rgba(255, 255, 255, .7);
+	-webkit-transition: background-color 1000ms linear;
+	-ms-transition: background-color 1000ms linear;
+	transition: background-color 1000ms linear;
+}
+
+.B:hover {
+    background: rgba(255, 214, 214, .7);
+}
+
+
+
+.links{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 32px;
+	background-color: #fafafa;
   font-family: 'Lobster', cursive;
-  font-size: 2rem;
-  margin: auto;
-  margin-top: 100px;
 }
 
-.lyricE div{
-  margin-top: 200px;
+.info{
+	font-family: 'Amatic SC', cursive;
+	font-size: 23px;
+	margin: 2px;
+	margin-left: 15px;
+	color: #5a5a5a;
+}
+
+
+
+@keyframes rotate{
+	0%{
+		transform: rotate(-20deg);
+	}
+	100%{
+		transform: rotate(20deg);
+	}
 }
