@@ -1,0 +1,234 @@
+
+body{
+background: rgb(19, 59, 138);
+width: 100vw;
+height: auto;
+margin: auto;
+
+}
+
+.bodyHead{
+  font-family: 'Arial';
+  -ms-transform: rotate(28deg); /* IE 9 */
+  -webkit-transform: rotate(28deg);
+  transform: rotate(28deg);
+  margin-left: 5%;
+
+
+}
+
+#A{
+  -ms-transform: rotate(28deg); /* IE 9 */
+  -webkit-transform: rotate(28deg);
+  transform: rotate(28deg);
+  position: absolute;
+  width: 37%;
+  top: 23%;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  font-family: 'Arial';
+;
+}
+#B{
+  -ms-transform: rotate(28deg); /* IE 9 */
+  -webkit-transform: rotate(28deg);
+  transform: rotate(28deg);
+  position: absolute;
+  width: 33%;
+  top: 62%;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-top: 15%;
+  font-family: 'Arial';
+
+}
+#C{
+  font-size: 2rem;
+  color: white;
+}
+
+.Box{
+  display: flex;
+  /*background: linear-gradient(90deg, #ffffff, #f9ff00, #ffffff);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;*/
+  /*border: 2px solid blue;*/
+}
+.num{
+  /*border-radius: 5px;
+  border: 2px skyblue solid;*/
+  font-size: 20vw;
+  text-align: left;
+  background-color: rgba(255,255,255,0.8);
+  color: rgba(255,0,0,0.8);
+  /*animation: AnimationName 2s ease infinite;*/
+}
+
+.Row{
+  display: block;
+  text-align: right;
+  text-align: -webkit-right;
+}
+
+.groundbox{
+  width: 2.5vw;
+  height: 27vw;
+  background-color: rgba(255,255,255,0.8);
+  position: absolute;
+  top: 58%;
+  margin-left: 26%;
+  margin-right: 50px;
+
+}
+
+
+.Zero{
+  width: 24%;
+  z-index: 1;
+  margin-left: 50px;
+  padding-top: 1%;
+}
+.zeroTop{
+  width: 0.5vw;
+  height: 18vw;
+  margin-bottom: 100px;
+}
+.zero{
+  width: 0.5vw;
+  height: 30vw;
+}
+.zeroBottom{
+  width: 0.5vw;
+  height: 44vw;
+  margin-top: 110%;
+}
+
+
+.first{
+  margin-right: 30px;
+  width: 38%;
+  padding-top: 10%;
+  position: absolute;
+  z-index: 5;
+}
+.oneTop_1{
+  width: 3vw;
+  height: 18vw;
+  margin-bottom: 65px;
+}
+.oneTop_2{
+  width: 25vw;
+  height: 0.5vw;
+  margin-bottom: 100px;
+}
+.one{
+  width: 30vw;
+  height: 3vw;
+}
+.oneBottom_1{
+  width: 32vw;
+  height: 0.5vw;
+  margin-top: 20px;
+  margin-right: 12%;
+}
+.oneBottom_2{
+  width: 18vw;
+  height: 0.5vw;
+  margin-top: 50px;
+  margin-right: 50%;
+}
+.oneBottom_3{
+  width: 3vw;
+  height: 73vw;
+  margin-top: 100px;
+}
+
+
+.second{
+  width: 12%;
+  padding-top: 10%;
+  z-index: 10;
+}
+.twoTop{
+  width: 1vw;
+  height: 20vw;
+  margin-bottom: 14vw;
+}
+.two{
+  width: 1vw;
+  height: 74vw;
+  margin-bottom: 4vw;
+}
+.twoBottom{
+  width: 2vw;
+  height: 30vw;
+  margin-left: 18vw;
+}
+
+
+.third{
+  margin-left: 2%;
+  padding-top: 10%;
+  text-align: left;
+  z-index: 15;
+}
+.threeTop{
+  width: 0.5vw;
+  height: 30vw;
+  margin-bottom: 5vw;
+}
+.threeHori{
+  width: 25vw;
+  height: 0.5vw;
+  margin-bottom: 10vw;
+}
+.threeBottom{
+  width: 0.5vw;
+  height: 70vw;
+}
+
+
+.fourth{
+  width: 56%;
+  padding-top: 15%;
+  z-index: 20;
+  position: absolute;
+}
+.fourTop{
+  width: 3vw;
+  height: 64vw;
+  margin-bottom: 40vw;
+}
+.fourBottom{
+  width: 3vw;
+  height: 23vw;
+}
+
+
+.fifth{
+  margin-left: -33%;
+  padding-top: 43%;
+  text-align: right;
+  text-align: -webkit-right;
+  z-index: 18;
+  animation: YoungRow 5s ease infinite;
+}
+
+.fiveTop{
+  width: 10vw;
+  height: 3vw;
+  margin-bottom: 2vw;
+}
+.fiveBottom{
+  width: 35vw;
+  height: 0.5vw;
+}
+
+
+@keyframes YoungRow {
+    0% { margin-left: -142%;}
+    50% { margin-left: -23%;}
+    100% { margin-left: -33%;}
+}
