@@ -214,6 +214,7 @@ margin: auto;
   text-align: -webkit-right;
   z-index: 18;
   animation: YoungRow 5s ease infinite;
+  animation-direction: alternate;
 }
 
 .fiveTop{
