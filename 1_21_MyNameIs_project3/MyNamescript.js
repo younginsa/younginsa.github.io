@@ -15,7 +15,7 @@ $(document).ready(function(){
   for(var i=250; i<screenWidth; i+=5){
 
       if(iTotal%12 === 1){
-        $('.BGgridWidth').append(verticalGridYear + yearTotal + "</div>");
+        $('.BGgridWidth').append(verticalGridYear + '<span class="yearPos">' + yearTotal +'</span>'+ "</div>");
         yearTotal++;
       }else{
         $('.BGgridWidth').append(verticalGrid);
@@ -36,6 +36,13 @@ $(document).ready(function(){
   console.log("j " + j);
   console.log("jtotal " + jTotal);
 
+
+  var topOffset = parseInt($(".yearPos").css('top'));
+  $(window).scroll(function(){
+      $('.yearPos').css({
+          'top': $(this).scrollTop() + topOffset
+      });
+  });
 
 //-----scroll Animation-------
   //get scroll position

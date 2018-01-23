@@ -29,7 +29,10 @@ body{
   font-size: 1rem;
   font-family: 'Rajdhani', sans-serif;
   z-index: 6;
-
+  }
+.yearPos{
+  position: absolute;
+  top: 5px;
   }
 .BGgridHeight{
   position: absolute;
@@ -66,7 +69,7 @@ body{
 /*---animation slide left styled---*/
 .nameBlock.new{
   position: absolute;
-  top: 36px;
+  top: 150px;
   left: 7px;
   width: 10px;
   height: 10px;
@@ -76,22 +79,8 @@ body{
   transform: translate3d(-100px, 0px, 0px);
   float: left;
   background: rgba(13,245,10,.4);
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   z-index: 7;
 }
-.nameBlock.new .newTip{
-  visibility: hidden;
-  width: 77px;
-  background-color: rgba(0,206,255,.7);
-  color: #fff;
-  font-size: 1rem;
-  font-family: 'VT323', monospace;
-  text-align: center;
-  border-radius: 9px;
-  position: absolute;
-  top: 3px;
-  left: 10px;
-  }
 .nameBlock.sa{
   position: absolute;
   top: 300px;
@@ -107,20 +96,6 @@ body{
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   z-index: 7;
 }
-.nameBlock.sa .DRem{
-  visibility: hidden;
-  width: 77px;
-  background-color: rgba(0,206,255,.7);
-  color: #fff;
-  font-size: 1rem;
-  font-family: 'VT323', monospace;
-  text-align: center;
-  border-radius: 9px;
-  position: absolute;
-  top: -50px;
-  left: 10px;
-  }
-
 .nameBlock.married{
   position: absolute;
   top: 1000px;
@@ -134,7 +109,25 @@ body{
   background: rgba(13,245,10,.4);
   z-index: 7;
 }
-.nameBlock.married .marriedTip{
+.coordinate{
+  position: absolute;
+  color: black;
+  font-size: 1rem;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  z-index: 7;
+}
+.One{
+  top: 500px;
+  left: 281px;
+}
+.Two{
+  top: 900px;
+  left: 1888px;
+}
+
+/*---pop-up---*/
+.Tip{
   visibility: hidden;
   width: 77px;
   background-color: rgba(0,206,255,.7);
@@ -149,17 +142,25 @@ body{
   }
 
 /*---hover events---*/
-.nameBlock.new:hover .newTip{
+.nameBlock.new:hover{
+  box-shadow: 0px 0px 30px 10px rgba(255, 152, 0, .7);
+}
+.nameBlock.new:hover .Tip{
   visibility: visible;
   box-shadow: 0px 1px 1px 0px rgba(244, 78, 247, 1);
 }
-.nameBlock.sa:hover .DRem{
+.nameBlock.sa:hover{
+  box-shadow: 8px 8px 5px 0px rgba(255, 152, 0, .7);
+}
+.nameBlock.sa:hover .Tip{
   visibility: visible;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
 }
-
-.nameBlock.married:hover .marriedTip{
+.nameBlock.married:hover{
+  box-shadow: 8px 8px 5px 0px rgba(255, 152, 0, .7);
+}
+.nameBlock.married:hover .Tip{
   visibility: visible;
-  box-shadow: 0px 0px 10px 10px rgba(228, 255, 0, 1);
+  box-shadow: 0px 0px 10px 10px rgba(244, 78, 247, .7);
 
 }
