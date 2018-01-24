@@ -50,6 +50,14 @@
   margin-right: 1rem;
   margin-top: 17px;
 }
+.mail a{
+  color: rgba(42,0,0,1);
+  text-decoration: none;
+}
+.mail a:visited{
+  color: rgba(42,0,0,1);
+  text-decoration: none;
+}
 .mail{
   font-size: 0.8rem;
   margin-right: 1rem;
@@ -112,5 +120,11 @@ input{
 	color:rgba(0,0,0,.5);
   font-size: 2rem;
   font-family: 'Amatic SC', cursive;
-
 }
+.donelist{
+  text-decoration: line-through;
+}
+
+/*----------*/
+
+/*----------*/
