@@ -154,24 +154,30 @@ body{
   }
 
 /*---hover events---*/
-.nameBlock.new:hover{
+.nameBlock.new:hover,
+.nameBlock.new:active{
   box-shadow: 0px 0px 30px 10px rgba(255, 152, 0, .7);
 }
-.nameBlock.new:hover .Tip{
+.nameBlock.new:hover .Tip,
+.nameBlock.new:active .Tip{
   visibility: visible;
   box-shadow: 0px 1px 1px 0px rgba(244, 78, 247, 1);
 }
-.nameBlock.sa:hover{
+.nameBlock.sa:hover,
+.nameBlock.sa:active{
   box-shadow: 8px 8px 5px 0px rgba(255, 152, 0, .7);
 }
-.nameBlock.sa:hover .Tip{
+.nameBlock.sa:hover .Tip,
+.nameBlock.sa:active .Tip{
   visibility: visible;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
 }
-.married:hover{
+.married:hover,
+.married:active{
   box-shadow: 8px 8px 5px 0px rgba(255, 152, 0, .7);
 }
-.married:hover .Tip{
+.married:hover .Tip,
+.married:active .Tip{
   visibility: visible;
   box-shadow: 0px 0px 10px 10px rgba(244, 78, 247, .7);
 
