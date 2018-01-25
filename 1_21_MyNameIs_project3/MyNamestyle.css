@@ -62,10 +62,7 @@ body{
   opacity: 1;
   transform: translate3d(0px, 0px, 0px);
 }
-.nameBlock.married.in-view {
-  opacity: 1;
-  transform: translate3d(0px, 0px, 0px);
-}
+
 /*---animation slide left styled---*/
 .nameBlock.new{
   position: absolute;
@@ -96,19 +93,24 @@ body{
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   z-index: 7;
 }
-.nameBlock.married{
+.married{
   position: absolute;
-  top: 1000px;
-  left: 1932px;
+  top: 466px;
+  left: 1483px;
   width: 100px;
   height: 100px;
   opacity: 0;
-  transition: all 2000ms linear;
-  transform: translate3d(-1832px, -1000px, 0px);
-  float: left;
+  transform: translateX(0) rotate(0deg);
+  transition: all .75s ease;
+  /* float: left; */
   background: rgba(13,245,10,.4);
   z-index: 7;
 }
+.married.show2 {
+  transform: translateX(450px) rotate(720deg);
+  opacity: 1;
+}
+
 .coordinate{
   position: absolute;
   color: black;
@@ -117,13 +119,23 @@ body{
   text-align: center;
   z-index: 7;
 }
+.Wedding{
+  position: absolute;
+  color: black;
+  font-size: 1rem;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  z-index: 7;
+  top:500px;
+  left: 1961px;
+}
 .One{
   top: 500px;
   left: 281px;
 }
 .Two{
   top: 900px;
-  left: 1888px;
+  left: 1961px;
 }
 
 /*---pop-up---*/
@@ -156,10 +168,10 @@ body{
   visibility: visible;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
 }
-.nameBlock.married:hover{
+.married:hover{
   box-shadow: 8px 8px 5px 0px rgba(255, 152, 0, .7);
 }
-.nameBlock.married:hover .Tip{
+.married:hover .Tip{
   visibility: visible;
   box-shadow: 0px 0px 10px 10px rgba(244, 78, 247, .7);
 
