@@ -163,7 +163,9 @@ body{
   visibility: visible;
   box-shadow: 0px 1px 1px 0px rgba(244, 78, 247, 1);
 }
-.nameBlock.sa:hover,
+.nameBlock.sa:hover{
+  box-shadow: 8px 8px 5px 0px rgba(255, 152, 0, .7);
+}
 .nameBlock.sa:active{
   box-shadow: 8px 8px 5px 0px rgba(255, 152, 0, .7);
 }
@@ -172,7 +174,9 @@ body{
   visibility: visible;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
 }
-.married:hover,
+.married:hover{
+  box-shadow: 8px 8px 5px 0px rgba(255, 152, 0, .7);
+}
 .married:active{
   box-shadow: 8px 8px 5px 0px rgba(255, 152, 0, .7);
 }
