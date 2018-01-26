@@ -3,7 +3,8 @@ $(document).ready(function(){
   var verticalGridWeek = '<div class="gridWidthWeek">'
   var horizentalGrid = '<div class="gridHeight"></div>';
   var screenWidth = $(window).width();
-  var screenHeight = 1500;
+  var screenHeight = $(window).height();
+  var gridMargin = $(window).width() * 0.05;
   console.log("this is screenWidth " + screenWidth + "\nthis is screenheight " + screenHeight);
 
 //-----background Grid-------//
@@ -12,9 +13,9 @@ $(document).ready(function(){
   var weekTotal=1;
   var monthTotal=0;
 
-  for(var i=0; i<screenWidth+58; i+=50){
+  for(var i=0; i<screenWidth; i+=screenWidth/25){
 
-      if(iTotal%6 === 1){
+      if(iTotal%4 === 1){
         $('.BGgridWidth').append(verticalGridWeek + '<span class="weekPos">' + weekTotal +'</span>'+ "</div>");
         weekTotal++;
       }else{
@@ -29,10 +30,32 @@ $(document).ready(function(){
   console.log("i " + i);
   console.log("iTotal "+ iTotal);
 
-  for(var j=0; j<screenHeight-50; j+=50){
+  for(var j=0; j<screenHeight-gridMargin; j+=gridMargin){
     $('.BGgridHeight').append(horizentalGrid);
       jTotal++;
+      console.log("made Hgrid!");
     }
+
+$(window).resize(function(){
+    screenWidth = $(window).width();
+    screenHeight = $(window).height();
+    gridMargin = $(window).width() * 0.05;
+    $(".gridHeight").remove();
+    jTotal=0;
+    console.log("Hgrid initialized!");
+    console.log("gridMargin "+gridMargin);
+
+    for(var j=0; j<screenHeight-gridMargin; j+=gridMargin){
+      $('.BGgridHeight').append(horizentalGrid);
+        jTotal++;
+        console.log("re-Hgrid!");
+        }
+    console.log("window resized!");
+    console.log("screenHeight "+screenHeight);
+  });
+
+
+  console.log(gridMargin*jTotal);
   console.log("j " + j);
   console.log("jtotal " + jTotal);
 

@@ -5,7 +5,7 @@ body{
 /* background Grid property*/
 .BgGrid{
   display: flex;
-  height: 1500px;
+  height: 100vh;
   z-index: 5;
 }
 .BGgridWidth{
@@ -13,10 +13,10 @@ body{
   justify-content: space-between;
 }
 .gridWidth{
-  margin-left: 50px;
+  margin-left: 5vw;
   background: rgba(255,157,157,.3);
   width: 1px;
-  height: 100%;
+  height: 100vh;
 }
 .gridWidthWeek{
   margin-left: 5px;
@@ -37,9 +37,10 @@ body{
 .BGgridHeight{
   position: absolute;
   top: 0;
+  max-height: 100vh;
 }
 .gridHeight{
-  margin-top: 50px;
+  margin-top: 5vw;
   background: rgba(255,157,157,.3);
   width: 100vw;
   height: 1px;
