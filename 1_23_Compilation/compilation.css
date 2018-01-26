@@ -82,29 +82,45 @@ body{
 }
 .weeks{
   color: rgba(13,245,10,1);
-  animation: bounceIn 1s linear 1;
 }
 .one{
-  top: 30vh;
-  left: 30vw;
+  top: 11vh;
+  left: 8vw;
 }
 .two{
-  top: 16vh;
-  left: 60vw;
+  top: 55vh;
+  left: 25vw;
 }
 .three{
-  top: 11vh;
+  top: 26vh;
   left: 41vw;
 }
 .four{
   top: 70vh;
-  left: 33vw;
+  left: 58vw;
 }
 .five{
   top: 61vh;
-  left: 57vw;
+  left: 74vw;
 }
+.ExerciseOne{
+  position: absolute;
+  top: 15.2vw;
+  left: 5vw;
+  width: 5.7vw;
+  height: 5vw;
+  background: rgba(255,245,10,.4);
+  color: rgba(255,245,10,0);
+  font-size: .8rem;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  z-index: 7;
+  animation: bounceIn 1s linear 1;
+}
+.ExOne{
+  color: #b7b12a;
 
+}
 
 /*---pop-up---*/
 .Tip{

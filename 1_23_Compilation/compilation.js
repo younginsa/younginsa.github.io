@@ -42,22 +42,15 @@ $(window).resize(function(){
     gridMargin = $(window).width() * 0.05;
     $(".gridHeight").remove();
     jTotal=0;
-    console.log("Hgrid initialized!");
-    console.log("gridMargin "+gridMargin);
-
     for(var j=0; j<screenHeight-gridMargin; j+=gridMargin){
       $('.BGgridHeight').append(horizentalGrid);
         jTotal++;
-        console.log("re-Hgrid!");
         }
     console.log("window resized!");
-    console.log("screenHeight "+screenHeight);
+    console.log("gridMargin "+gridMargin);
+
   });
 
-
-  console.log(gridMargin*jTotal);
-  console.log("j " + j);
-  console.log("jtotal " + jTotal);
 
 //----num on top as fixed in vertical---------
   var topOffset = parseInt($(".weekPos").css('top'));
@@ -67,9 +60,13 @@ $(window).resize(function(){
       });
   });
 
-//-----Animation------//
+//-----Click------//
   $('.core').on('click', function(){
       $('.weekBox').toggleClass('weeks');
+  });
+
+  $('.one').on('click', function(){
+      $('.ExerciseOne').toggleClass('ExOne');
   });
 
  });
