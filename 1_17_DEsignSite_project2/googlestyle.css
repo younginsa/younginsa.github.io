@@ -20,7 +20,7 @@
   width: 21px;
   justify-content: space-around;
 }
-.me{
+.ori{
   width: 2rem;
   height: 2rem;
   background: red;
@@ -32,6 +32,7 @@
   color: white;
   margin-top: 10px;
 }
+
 .noneCircle{
   width: 1rem;
   height: 1rem;
@@ -46,9 +47,15 @@
   margin-right: 1rem;
 }
 .images{
+  color: rgba(42,0,0,1);
   font-size: 0.8rem;
   margin-right: 1rem;
   margin-top: 17px;
+  text-decoration: none;
+}
+.images a:visited{
+  color: rgba(42,0,0,1);
+  text-decoration: none;
 }
 .mail a{
   color: rgba(42,0,0,1);
@@ -70,7 +77,6 @@
   margin: auto;
   margin-top: 9rem;
 }
-
 .searchArea{
   width: 100%;
   height: 100px;
@@ -93,6 +99,7 @@
   right: 42px;
 }
 
+
 form{
   width: 100%;
   height: 0;
@@ -103,7 +110,6 @@ form{
   display: inline-block;
   width: 35rem;
   box-shadow: 5px 5px 10px rgba(0,0,0,.1);
-
 }
 input{
   width: 100%;
@@ -113,8 +119,8 @@ input{
 }
 
 
-
 .list {
+  display: block;
   height: 300px;
   text-align: center;
 	color:rgba(0,0,0,.5);
@@ -128,10 +134,26 @@ input{
   background-color: rgba(0,0,0,0);
   border: 0;
   margin: auto;
+  top: 10px;
   width:50px;
   height: 30px;
 }
+.item:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+
+@keyframes shake {
+  10%, 90% {transform: translate3d(-1px, 0, 0);}
+  20%, 80% {transform: translate3d(2px, 0, 0);}
+  30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
+  40%, 60% {transform: translate3d(4px, 0, 0);}
+}
+
 
 /*----------*/
-
+/* test area */
 /*----------*/
