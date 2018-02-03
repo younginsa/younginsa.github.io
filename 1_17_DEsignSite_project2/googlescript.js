@@ -1,16 +1,29 @@
-var num=0;
+// var num;
 var numI;
 var sketchItem;
+var size;
 var sketchPos=[];
 var sketchPosNEW;
 var Itemdiv;
 
+
 $(document).ready(function(){
+  var num=0;
+  var classNum; //to apply width seperately
  $('.ideaBulb').click(function(){
 
     sketchItem = $('input[name=sketchListItem]').val();
+    size = sketchItem.length;
+
+    console.log('****');
+    console.log(size);
+    console.log(classNum);
+    console.log('****');
+
     Itemdiv = '<div class="item ui-widget-content ' + num + '"' + '>' + sketchItem + '</div>';
+    classNum = '.'+num;
     $('.list').prepend(Itemdiv);
+    $(classNum).css({width : size*10+'px'});
     $( ".item" ).draggable(); //ui-jQuery
 
 
@@ -98,7 +111,11 @@ $(document)
 
 
   //--------search clicked text--------//
-
+// , "toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width=400,height=400
+// ↑ upper code added after "_black", is to open new tab(depends on personal setting though,)
   function myFunction(searchIt) {
-      var myWindow = window.open("https://www.google.com/search?q="+ searchIt, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width=400,height=400");
+      var myWindow = window.open("https://www.google.com/search?q="+ searchIt, "_blank");
+      // win.focus();
   }
+
+  //----
