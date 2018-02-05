@@ -1,0 +1,74 @@
+body{
+
+	margin: 5vw;
+}
+
+h1{
+	margin-bottom: 30px;
+	font-size: 1.5rem;
+	text-align: right;
+	font-family: 'Londrina Outline', cursive;
+
+}
+
+.Box{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.ContentBox{
+	margin-bottom: 10vw;
+	display: block;
+	text-align: center;
+}
+
+.Collapse{
+	display: block;
+	text-align: right;
+}
+
+.etCetera{
+	text-decoration: none;
+	color: red;
+	position: absolute;
+	margin-left: -8px;
+}
+
+img{
+	width: 42vw;
+	height: auto;
+	border: solid 1px gray;
+}
+
+.GIF{
+	visibility: hidden;
+	position: absolute;
+	width: 10vw;
+/*	top: 17vw;
+*/	border: none;
+}
+
+.one{
+	left: 37vw;
+}
+.two{
+	left: 85vw;
+}
+.three{
+	left: 37vw;
+}
+
+/*.mainImg{
+	width: 30vw;
+	border: solid 1px gray;
+	z-index: 10;
+}*/
+
+.ContentBox:hover .GIF{
+	visibility: visible;
+    box-shadow: 10px 10px 17px 0px rgba(244, 78, 247, .5);
+
+
+}
+
