@@ -4,10 +4,13 @@ body{
 }
 
 h1{
-	margin-bottom: 30px;
-	font-size: 1.5rem;
-	text-align: right;
+	margin-bottom: 100px;
+	font-size: 2rem;
+	text-align: left;
 	font-family: 'Londrina Outline', cursive;
+}
+p{
+	font-family: 'Monda', sans-serif;
 
 }
 
@@ -38,16 +41,10 @@ h1{
 img{
 	width: 42vw;
 	height: auto;
-	border: solid 1px gray;
+	border: solid 1px #d4d4d4;
 }
 
-.GIF{
-	visibility: hidden;
-	position: absolute;
-	width: 10vw;
-/*	top: 17vw;
-*/	border: none;
-}
+
 
 .one{
 	left: 37vw;
@@ -59,16 +56,5 @@ img{
 	left: 37vw;
 }
 
-/*.mainImg{
-	width: 30vw;
-	border: solid 1px gray;
-	z-index: 10;
-}*/
 
-.ContentBox:hover .GIF{
-	visibility: visible;
-    box-shadow: 10px 10px 17px 0px rgba(244, 78, 247, .5);
-
-
-}
 

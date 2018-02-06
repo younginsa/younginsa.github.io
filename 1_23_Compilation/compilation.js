@@ -2,9 +2,9 @@ $(document).ready(function(){
   var verticalGrid = '<div class="gridWidth"></div>';
   var verticalGridWeek = '<div class="gridWidthWeek">'
   var horizentalGrid = '<div class="gridHeight"></div>';
-  var screenWidth = $(window).width();
+  var screenWidth = $(window).width() - $(window).width() * 0.25;
   var screenHeight = $(window).height();
-  var gridMargin = $(window).width() * 0.05;
+  var gridMargin = $(window).width() * 0.04;
   console.log("this is screenWidth " + screenWidth + "\nthis is screenheight " + screenHeight);
 
 //-----background Grid-------//
@@ -37,9 +37,9 @@ $(document).ready(function(){
     }
 
 $(window).resize(function(){
-    screenWidth = $(window).width();
+    screenWidth = $(window).width() - $(window).width() * 0.25;
     screenHeight = $(window).height();
-    gridMargin = $(window).width() * 0.05;
+    gridMargin = $(window).width() * 0.04;
     $(".gridHeight").remove();
     jTotal=0;
     for(var j=0; j<screenHeight-gridMargin; j+=gridMargin){
@@ -47,6 +47,7 @@ $(window).resize(function(){
         jTotal++;
         }
     console.log("window resized!");
+    console.log(screenWidth/25);
     console.log("gridMargin "+gridMargin);
 
   });
@@ -63,10 +64,32 @@ $(window).resize(function(){
 //-----Click------//
   $('.core').on('click', function(){
       $('.weekBox').toggleClass('weeks');
-  });
+    });
 
   $('.one').on('click', function(){
-      $('.ExerciseOne').toggleClass('ExOne');
-  });
+      $('.textOne').toggleClass('WeekOneText');
+      $('.Link').toggleClass('WeekOneText');
+      $('.response').toggleClass('appear');
+    });
+  $('.two').on('click', function(){
+      $('.textTwo').toggleClass('WeekTwoText');
+      $('.responseSecond').toggleClass('appear');
+    });
+  $('.three').on('click', function(){
+      $('.textThree').toggleClass('WeekThreeText');
+      $('.responseThird').toggleClass('appear');
+    });
+  $('.four').on('click', function(){
+      $('.textFour').toggleClass('WeekFourText');
+      $('.responseForth').toggleClass('appear');
+    });
+  $('.five').on('click', function(){
+      $('.textFive').toggleClass('WeekFiveText');
+    });
+
+
+
+
+
 
  });
