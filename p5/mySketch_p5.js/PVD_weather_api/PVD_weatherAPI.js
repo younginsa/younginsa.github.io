@@ -16,7 +16,7 @@ function setup() {
   createCanvas(windowWidth-100, 400);
 
  // Request the data from apixu.com
-  var url = 'http://api.apixu.com/v1/current.json?key=1b2ae85d8ffa4cf59b6203012180302&q=providence';
+  var url = 'https://api.apixu.com/v1/current.json?key=1b2ae85d8ffa4cf59b6203012180302&q=providence';
   loadJSON(url, gotWeather);
 
   wind = createVector();
@@ -52,7 +52,7 @@ function setup() {
 function draw() {
 
   background(255,10);
- 
+
   // This section draws an arrow pointing in the direction of wind
   push();
   translate(32, height - 32);
