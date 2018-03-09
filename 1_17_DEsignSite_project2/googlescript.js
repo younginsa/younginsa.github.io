@@ -23,7 +23,7 @@ $(document).ready(function(){
     Itemdiv = '<div class="item ui-widget-content ' + num + '"' + '>' + sketchItem + '</div>';
     classNum = '.'+num;
     $('.list').prepend(Itemdiv);
-    $(classNum).css({width : size*10+'px'});
+    $(classNum).css({width : size*30+'px'});
     $( ".item" ).draggable(); //ui-jQuery
 
 
