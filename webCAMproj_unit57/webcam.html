@@ -1,0 +1,61 @@
+
+<html>
+   <head>
+       <meta name="viewport" content="width=device-width, minimum-scale=0.1">
+        <title>FAV_webCam Project_Young</title>
+          <link rel="stylesheet" type="text/css" href="webcam.css">
+
+           <script>
+              function startTime() {
+                  var today = new Date();
+                  var dy = today.getDate();
+                  var y = today.getFullYear();
+                  var mn = today.getMonth() + 1;
+                  var h = today.getHours();
+                  var m = today.getMinutes();
+                  var s = today.getSeconds();
+                  m = checkTime(m);
+                  s = checkTime(s);
+                  document.getElementById('txt').innerHTML =
+                  y + "-" + mn + "-" + dy + "-" + h + "-" + m + "-" + s;
+                  
+                  var t = setTimeout(startTime, 500);
+              }
+              
+              function checkTime(i) {
+                  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                  return i;
+              }
+              </script>
+
+   </head>
+
+
+
+
+   <body onload="startTime()">
+       <h1>WebCam Project_Young</h1>
+
+       <div class="days">
+        <div id="txt"></div>
+        <div id="cam">
+         <iframe  width="800px" height="450px" src="http://g1.ipcamlive.com/player/player.php?alias=5bb1ebe73adcd&amp;autoplay=1" frameborder="0" allowfullscreen></iframe></div>
+
+<!--          <iframe width="560" height="315" src="https://www.youtube.com/embed/u-e7_RaUePM?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                          <!--          <video class="sunRise" autoplay loop>
+                                     <source src="sunRise/SunRise.webm" type="video/webm">
+                                       Your browser does not support the video tag.
+                                   </video> -->
+       </div>
+
+<!--        <video class="Earth" width="320" height="240" autoplay loop>
+        <source src="earth.webm" type="video/webm">
+          Your browser does not support the video tag.
+      </video> -->
+
+
+
+
+
+   </body>
+</html>
