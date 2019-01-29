@@ -1,0 +1,91 @@
+body{
+  display: block;
+  background-color: blue;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 22px;
+}
+a:visited{
+  color: inherit;
+}
+.TopNum{
+  display: block;
+	font-family: helvetica;
+	font-size: 2rem;
+	text-align: right;
+}
+#main{
+	position: absolute;
+	top: 22px;
+	left: 15px;
+	text-decoration: none;
+	color: white;
+}
+#menu_1{
+	top: 22px;
+	right: 8rem;
+	text-decoration: none;
+	color: white;
+}
+#menu_2{
+	top: 22px;
+	right: 6rem;
+	text-decoration: none;
+	color: white;
+}
+#menu_3{
+	top: 22px;
+	right: 4rem;
+	text-decoration: none;
+	color: white;
+}
+#menu_4{
+	top: 22px;
+	right: 2rem;
+	text-decoration: none;
+	color: white;
+}
+
+#pattern{
+  margin-top: 5rem;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10rem;
+  width: 70%;
+}
+
+.content{
+  font-family: helvetica;
+  color: white;
+}
+
+table{
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  width: 90%;
+}
+th{
+  width: 30%;
+  height: auto;
+  padding: 10px;
+}
+td{
+  border: 10px solid blue;
+  text-align: left;
+  padding: 7px;
+  vertical-align: top;
+}
+#tableTitle{
+  text-decoration: underline;
+  text-align: center;
+}
+#tableTitle2{
+  margin-left: 10px;
+  font-family: helvetica;
+  color: white;
+  text-align: left;
+}
