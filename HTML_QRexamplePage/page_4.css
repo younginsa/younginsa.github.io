@@ -92,3 +92,42 @@ td{
 #tableTitle{
   height: 35rem;
 }
+
+@media only screen and (max-width:800px){
+  #pattern{
+    margin-top: 20vh;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  #webTable{
+    display:none;
+  }
+  #mobile{
+    margin: auto;
+    visibility: visible;
+    display: block;
+    text-align: center;
+    width: 90%;
+  }
+  #tableTitle{
+    display: block;
+    margin: auto;
+    margin-top: 20vh;
+    height: 35rem;
+  }
+  a{
+    display: inline-block;
+    text-align: left;
+    margin-top: 7vh;
+    margin-bottom: 20vh;
+  }
+
+}
+@media only screen and (min-width:801px) {
+    #mobile{
+      display: none;
+    }
+}

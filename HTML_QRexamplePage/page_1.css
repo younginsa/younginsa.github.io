@@ -82,10 +82,39 @@ td{
 #tableTitle{
   text-decoration: underline;
   text-align: center;
+  vertical-align: top;
 }
 #tableTitle2{
   margin-left: 10px;
   font-family: helvetica;
   color: white;
-  text-align: left;
+  text-align: center;
+}
+
+@media only screen and (max-width:800px) {
+  /* For mobile phones: */
+    #webTable{
+      display: none;
+    }
+    #mobile{
+      margin: auto;
+      visibility: visible;
+      display: block;
+      width: 90%;
+    }
+    #pattern{
+      margin-top: 5rem;
+      display: block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10rem;
+      width: 100%;
+    }
+}
+
+@media only screen and (min-width:801px) {
+    #mobile{
+      display: none;
+    }
 }
