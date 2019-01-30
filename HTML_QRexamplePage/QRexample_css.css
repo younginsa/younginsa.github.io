@@ -58,8 +58,8 @@ body {
 	}
 	#MainTitle2{
 		visibility: visible;
-		display: block;
-		padding-top: 15vh;
+		display: inline-block;
+		padding-top: 10vh;
 		font-family: helvetica;
 		text-decoration: none;
 		font-size: 15vw;
