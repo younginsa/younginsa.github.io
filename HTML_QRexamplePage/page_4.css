@@ -94,6 +94,16 @@ td{
 }
 
 @media only screen and (max-width:800px){
+  p{
+    font-family: helvetica;
+    margin-top: 26vh;
+    margin-bottom: 36vh;
+    margin-left: 1rem;
+    font-size: 11vw;
+    color: blue;
+  	-webkit-text-stroke: 1px white;
+  	-webkit-text-fill-color: blue;
+  }
   #pattern{
     margin-top: 20vh;
     display: block;
@@ -118,7 +128,7 @@ td{
     margin-top: 20vh;
     height: 35rem;
   }
-  a{
+  #diagram{
     display: inline-block;
     text-align: left;
     margin-top: 7vh;
