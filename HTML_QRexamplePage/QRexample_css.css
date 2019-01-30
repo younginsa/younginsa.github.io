@@ -10,7 +10,7 @@ body {
 	margin-top: 7rem;
 	font-family: helvetica;
 	text-decoration: none;
-	font-size: 8rem;
+	font-size: 9vw;
 	color: white;
 	text-align: left;
 }
@@ -62,7 +62,7 @@ body {
 		padding-top: 15vh;
 		font-family: helvetica;
 		text-decoration: none;
-		font-size: 8rem;
+		font-size: 15vw;
 		color: white;
 		text-align: left;
 	}
