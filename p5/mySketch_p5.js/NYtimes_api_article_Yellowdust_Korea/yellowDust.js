@@ -17,9 +17,9 @@ function setup() {
 function keyPressed(){
   if (keyCode === ENTER){
   	 removeElements();
-  	 url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=0a496657f3f0437fae3724a0cb1d7bd3&q=';
+  	 //url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=0a496657f3f0437fae3724a0cb1d7bd3&q=';
 	 searchIt = $('input[name=sketchListItem]').val();
-	 url = url+searchIt;
+	 url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q='+searchIt+'&api-key=K7dGNyHoFOuGUOepv8qW8PtvNXiOAAjt&q=';
 	 console.log(url);
 
 	 loadJSON(url, gotData);
