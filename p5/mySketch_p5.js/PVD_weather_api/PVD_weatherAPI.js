@@ -1,5 +1,6 @@
 // A wind direction vector
 var wind;
+let currentTemp;
 var BGtemp;
 // Circle position
 var position;
@@ -16,7 +17,7 @@ function setup() {
   createCanvas(windowWidth-100, 400);
 
  // Request the data from apixu.com
-  var url = 'https://api.apixu.com/v1/current.json?key=1b2ae85d8ffa4cf59b6203012180302&q=providence';
+  var url = 'http://api.weatherstack.com/current?access_key=6e18c627d9e2156e4c030b5ac9161858&query=providence';
   loadJSON(url, gotWeather);
 
   wind = createVector();
@@ -51,7 +52,7 @@ function setup() {
 
 function draw() {
 
-  background(255,10);
+  background(255,30);
 
   // This section draws an arrow pointing in the direction of wind
   push();
@@ -92,17 +93,20 @@ function draw() {
 function gotWeather(weather) {
   var city = weather.location.name;
   var region = weather.location.region;
-  var update = weather.current.last_updated;
+  var update = weather.location.localtime;
   console.log(city+' ' + region + ' ' + update);
 
-  temp = Number(weather.current.temp_c);
-  BGtemp = "rgba(" + (200+temp*10) + ",80," + (150-temp*10) + ",.3)";
+  temp = Number(weather.current.temperature);
+  currentTemp = map(temp,0,50,0,255);
+  int(currentTemp);
+
+  BGtemp = "rgba("+ int(255-currentTemp)+",80,"+ int(currentTemp)+",.3)";
   console.log(BGtemp);
 
   // Get the angle (convert to radians)
   var angle = radians(Number(weather.current.wind_degree));
   // Get the wind speed
-  var windmag = Number(weather.current.wind_mph);
+  var windmag = Number(weather.current.wind_speed);
 
   // Display as HTML elements
   var info = createDiv(city+' ' + region + ' ' + update);
