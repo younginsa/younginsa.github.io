@@ -17,7 +17,7 @@ function setup() {
   createCanvas(windowWidth-100, 400);
 
  // Request the data from apixu.com
-  var url = 'http://api.weatherstack.com/current?access_key=6e18c627d9e2156e4c030b5ac9161858&query=providence';
+  var url = 'http://api.weatherstack.com/current?access_key=6e18c627d9e2156e4c030b5ac9161858&query=Providence';
   loadJSON(url, gotWeather);
 
   wind = createVector();
