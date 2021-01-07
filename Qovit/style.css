@@ -800,7 +800,7 @@ h2{
 
 /* #15 Geometry */
 #sFifthteen{
-  transform: rotate(45deg);
+  /* transform: rotate(45deg); */
   transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
 }
 
