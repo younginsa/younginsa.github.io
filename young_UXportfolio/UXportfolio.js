@@ -1,4 +1,5 @@
 var header = document.getElementById("myHeader");
+var content = document.getElementById("myContent");
 var myDropdown = document.getElementById("myDropdown");
 var sticky = header.offsetTop;
 var i=2;
@@ -24,7 +25,6 @@ $(window).click(function(event){
 
 
 // function open and close menu by appending class show
-
 function menuFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -33,8 +33,10 @@ function menuFunction() {
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
+    content.classList.add("spacing");
   } else {
     header.classList.remove("sticky");
+    content.classList.remove("spacing");
   }
 }
 

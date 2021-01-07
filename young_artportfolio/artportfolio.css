@@ -155,3 +155,8 @@ td{
   left: 0;
   width: 100%;
 }
+
+.spacing{
+  margin-top:10px;
+  padding-top:8px;
+}

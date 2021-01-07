@@ -1,3 +1,5 @@
+/* basic attribute */
+
 body {
   margin:0px;
   padding:0px;
@@ -26,6 +28,25 @@ a:visited{
 a:hover{
   color: green;
   text-decoration: underline;
+}
+
+
+/* Navigation Bar */
+.show {
+    display: block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.spacing{
+  margin-top:10px;
+  padding-top:8px;
 }
 
 .top-resume {
@@ -78,7 +99,6 @@ a:hover{
   padding-top: 5px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
 }
 
 .menus{
@@ -86,33 +106,77 @@ a:hover{
   border: 1px solid black;
   border-style: solid solid none solid;
   background-color: #ffffff;
-
 }
 
-.portfolioList{
-  float:left;
-  width: 33%;
-  height: 30vh;
-  background-color: #000000;
-  margin: 1px;
+
+
+/* Content attribute */
+
+.content {
+  /* box-sizing: border-box; */
+  margin:10px;
+  padding:8px;
+  z-index: 0;
 }
+
+.portfolioRow{
+  display: flex;
+  justify-content: space-around;
+  /* margin-bottom: 3px; */
+}
+
 
 .portfolioRow:after {
   content: "";
-  display: table;
+  display: flex;
+  align-items: stretch
   clear: both;
 }
 
 
-
-.show {
-    display: block;
+#wrapper{
+  position: relative;
+  width: 33%;
+  height: 22.3vw;
+  margin: 2px;
 }
 
-.content {
-  box-sizing: border-box;
-  padding: 16px;
+#wrapper div{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: white;
+  opacity: 0;
+  visibility:hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
 }
+
+#wrapper img{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+
+
+#wrapper:hover div{
+  opacity: 0.4;
+  visibility: visible;
+}
+
+#wrapper:hover div p{
+  position: relative;
+  top: 40%;
+  text-align: center;
+  color: red;
+  visibility: visible;
+}
+
+
+/* Footer attribute */
+
 
 .footer {
    /* position: fixed; */
@@ -123,17 +187,8 @@ a:hover{
 }
 
 
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
+/* etc */
 
 .end{
   border-style: solid solid solid solid;
-}
-
-.test{
-  background-color: red;
 }

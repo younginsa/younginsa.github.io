@@ -1,4 +1,5 @@
 var header = document.getElementById("myHeader");
+var content = document.getElementById("myContent");
 var sticky = header.offsetTop;
 var myDropdown = document.getElementById("myDropdown");
 var i=2;
@@ -13,8 +14,10 @@ $(window).scroll(function(){
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
+    content.classList.add("spacing");
   } else {
     header.classList.remove("sticky");
+    content.classList.remove("spacing");
   }
 }
 
