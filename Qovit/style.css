@@ -67,23 +67,13 @@ h2{
   width: 100px;
   height: 100px;
   margin: 2vw;
-  background:
-    linear-gradient(to top left,
-        rgba(0,0,0,0) calc(50% - 0.8px),
-        #c9ab884a 50%,
-        rgba(0,0,0,0) calc(50% + 0.8px),
-        rgba(0,0,0,0) 100%),
-    linear-gradient(to top right,
-         rgba(0,0,0,0) 0%,
-         rgba(0,0,0,0) calc(50% - 0.8px),
-         #c9ab884a 50%,
-         rgba(0,0,0,0) calc(50% + 0.8px),
-         rgba(0,0,0,0) 100%);
+  /* background-image: radial-gradient(var(--main-gold-color) 0%, white 40%); */
 }
 
 .survey:hover .cover{
   visibility: visible;
 }
+
 
 .circle{
  position: absolute;
@@ -641,43 +631,117 @@ h2{
   transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
 }
 
-#sTwelve:hover>#Lone{
+#sTwelve>#Lone{
   transform: rotate(11.25deg);
   transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
 }
 
-#sTwelve:hover>#LTwo{
+.LCirle{
+  visibility: hidden;
+  position: absolute;
+  margin-left: -75px;
+  margin-top: 84px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--main-gold-color);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTwelve>#LTwo{
   transform: rotate(22.5deg);
   transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
 }
 
-#sTwelve:hover>#LThree{
+#sTwelve>#LThree{
   transform: rotate(33.75deg);
   transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
 }
 
-#sTwelve:hover>#LFour{
+#sTwelve>#LFour{
   transform: rotate(45deg);
   transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
 }
 
-#sTwelve:hover>#LFive{
+#sTwelve>#LFive{
   transform: rotate(56.25deg);
   transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
 }
 
-#sTwelve:hover>#LSix{
+#sTwelve>#LSix{
   transform: rotate(67.5deg);
   transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
 }
 
-#sTwelve:hover>#LSeven{
+#sTwelve>#LSeven{
   transform: rotate(78.75deg);
   transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
 }
 
-#sTwelve:hover>#LEight{
+#sTwelve>#LEight{
   transform: rotate(90deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTwelve:hover>#CZero{
+  visibility: visible;
+  margin-top: 10px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTwelve:hover>#Cone{
+  visibility: visible;
+  margin-top: 11px;
+  margin-left: -47px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTwelve:hover>#CTwo{
+  visibility: visible;
+  margin-top: 14px;
+  margin-left: -17px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTwelve:hover>#CThree{
+  visibility: visible;
+  margin-top: 20px;
+  margin-left: 11px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTwelve:hover>#CFour{
+  visibility: visible;
+  margin-top: 29px;
+  margin-left: 37px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTwelve:hover>#CFive{
+  visibility: visible;
+  margin-top: 41px;
+  margin-left: 57px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTwelve:hover>#CSix{
+  visibility: visible;
+  margin-top: 55px;
+  margin-left: 72px;s
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTwelve:hover>#CSeven{
+  visibility: visible;
+  margin-top: 70px;
+  margin-left: 79px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTwelve:hover>#CEight{
+  visibility: visible;
+  margin-top: 85px;
+  margin-left: 81px;
   transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
 }
 
