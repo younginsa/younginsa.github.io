@@ -1,0 +1,39 @@
+body{
+  margin: 50px;
+}
+
+h1{
+  margin-bottom: 100px;
+
+  color: gray;
+  font-size: 3rem;
+}
+
+.Content{
+  width: 800px;
+}
+
+.Young{
+  margin-right: -2rem;
+  text-align: right;
+  color: gray;
+  font-size: 1rem;
+
+}
+
+.Tbox{
+  width: 100%;
+  padding: 1em;
+  border: 1px solid yellow;
+  line-height: 150%;
+  background: white;
+}
+
+h2{
+  color: rgba(0,0,255,0.5);
+  font-size: 1rem;
+}
+
+ol{
+  font-style: italic;
+}

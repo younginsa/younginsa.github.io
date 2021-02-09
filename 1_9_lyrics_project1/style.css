@@ -1,0 +1,220 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Default setting for reset browser. Code starts here!--*/
+/*
+.BGimage{
+
+	background: url('source/marrige_BG.jpg') repeat top center;
+  background-size: 20vw auto;
+  position: fixed;
+	left: 0;
+  right: 0;
+  z-index: 1;
+}
+*/
+
+
+.content:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url('source/sweethome.jpeg');
+  background-size: 30vw auto;
+  width: 100%;
+  height: 100%;
+  filter: blur(1px) grayscale(1);
+
+}
+
+.content {
+  overflow: auto;
+  position: relative;
+}
+
+
+
+.bodyHead{
+
+  font-family: 'Lobster', cursive;
+}
+
+.bodyHead h1{
+  padding: 30px;
+  font-size: 100px;
+  color: white;
+  text-align: left;
+}
+
+.titleNum{
+  display: grid;
+  height: 60%;
+  margin-left: 150px;
+  /*border: 2px solid blue;*/
+  grid-template: 50% 50% / 15% 15%;
+  color: white;
+}
+
+.num{
+  /*border-radius: 5px;
+  border: 2px skyblue solid;*/
+  font-size: 30vw;
+  text-align: right;
+  line-height: 70%;
+}
+
+.one{
+  margin-left: 120px;
+  align-self: flex-end;
+}
+.two{
+  padding-top: 10px;
+  padding-left: 5px;
+
+}
+.three{
+  margin-left: 10px;
+  align-self: flex-start;
+}
+.four{
+	position: relative;
+  font-size: 35vw;
+  padding-bottom: 50px;
+  align-self: flex-start;
+}
+
+.circle {
+  display: block;
+	width: 50vw;
+	height: 50vw;
+	background: rgba(255, 255, 232, .7);
+	-moz-border-radius: 30vw;
+	-webkit-border-radius: 30vw;
+	border-radius: 25vw;
+  line-height: 50vw;
+  color: white;
+  font-size: 30vw;
+  text-align: center;
+}
+
+.CirOne{
+  margin-left: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.CirTwo{
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.CirThree{
+  margin: auto;
+}
+
+
+
+
+.lyric{
+    width: 50vw;
+    height: auto;
+    background: rgba(255, 255, 232, .7);
+		font-family: 'Amatic SC', cursive;
+    color: rgb(0, 0, 0);
+    line-height: 200%;
+    font-size: 2rem;
+    text-align: center;
+		margin: auto;
+		margin-top: 100px;
+  }
+
+  #pac-man {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-right: 1rem solid transparent;
+  border-top: 1rem solid #F9F089;
+  border-left: 1rem solid #F9F089;
+  border-bottom: 1rem solid #F9F089;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+	animation: rotate 1s linear infinite alternate;
+
+}
+
+
+.B{
+  background: rgba(255, 255, 255, .7);
+	-webkit-transition: background-color 1000ms linear;
+	-ms-transition: background-color 1000ms linear;
+	transition: background-color 1000ms linear;
+}
+
+.B:hover {
+    background: rgba(255, 214, 214, .7);
+}
+
+
+
+.links{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 32px;
+	background-color: #fafafa;
+  font-family: 'Lobster', cursive;
+}
+
+.info{
+	font-family: 'Amatic SC', cursive;
+	font-size: 2vw;
+	margin: 2px;
+	margin-left: 15px;
+	color: #5a5a5a;
+}
+
+
+
+@keyframes rotate{
+	0%{
+		transform: rotate(-20deg);
+	}
+	100%{
+		transform: rotate(20deg);
+	}
+}

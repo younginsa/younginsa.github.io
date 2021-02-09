@@ -1,0 +1,23 @@
+
+h1{
+  color: rgba(0,0,255,0.5);
+  font-size: 3rem;
+}
+
+.Tbox{
+  width: 500px;
+  margin: 3em;
+  padding: 1em;
+  border: 1px solid red;
+  background: yellow;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2{
+  color: rgba(0,0,255,0.5);
+  font-size: 1rem;
+}
+
+ol{
+  font-style: italic;
+}

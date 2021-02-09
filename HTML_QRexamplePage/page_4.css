@@ -1,0 +1,143 @@
+body{
+  display: block;
+  background-color: blue;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 22px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:visited{
+  color: inherit;
+}
+p{
+  font-family: helvetica;
+  margin-left: 1rem;
+  font-size: 11vw;
+  color: blue;
+	-webkit-text-stroke: 1px white;
+	-webkit-text-fill-color: blue;
+}
+.TopNum{
+  display: block;
+	font-family: helvetica;
+	font-size: 2rem;
+	text-align: right;
+}
+#main{
+	position: absolute;
+	top: 22px;
+	left: 15px;
+	text-decoration: none;
+	color: white;
+}
+#menu_1{
+	top: 22px;
+	right: 8rem;
+	text-decoration: none;
+	color: white;
+}
+#menu_2{
+	top: 22px;
+	right: 6rem;
+	text-decoration: none;
+	color: white;
+}
+#menu_3{
+	top: 22px;
+	right: 4rem;
+	text-decoration: none;
+	color: white;
+}
+#menu_4{
+	top: 22px;
+	right: 2rem;
+	text-decoration: none;
+	color: white;
+}
+
+#pattern{
+  margin-top: 5rem;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.content{
+  font-family: helvetica;
+  color: white;
+}
+
+table{
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+th{
+  width: 30%;
+  height: auto;
+  padding: 10px;
+}
+td{
+  border: 10px solid blue;
+  text-align: center;
+  padding: 7px;
+  vertical-align: top;
+}
+#tableTitle{
+  height: 35rem;
+}
+
+@media only screen and (max-width:800px){
+  p{
+    font-family: helvetica;
+    margin-top: 26vh;
+    margin-bottom: 36vh;
+    margin-left: 1rem;
+    font-size: 11vw;
+    color: blue;
+  	-webkit-text-stroke: 1px white;
+  	-webkit-text-fill-color: blue;
+  }
+  #pattern{
+    margin-top: 20vh;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  #webTable{
+    display:none;
+  }
+  #mobile{
+    margin: auto;
+    visibility: visible;
+    display: block;
+    text-align: center;
+    width: 90%;
+  }
+  #tableTitle{
+    display: block;
+    margin: auto;
+    margin-top: 20vh;
+    height: 35rem;
+  }
+  #diagram{
+    display: inline-block;
+    text-align: left;
+    margin-top: 7vh;
+    margin-bottom: 20vh;
+  }
+
+}
+@media only screen and (min-width:801px) {
+    #mobile{
+      display: none;
+    }
+}

@@ -1,0 +1,401 @@
+body{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: transparent;
+}
+
+img{
+  visibility: hidden;
+  left: 5vw;
+  top: 28px;
+  width: 10vw;
+  z-index: 50;
+  position: absolute;
+}
+
+
+/* background Grid property*/
+.BgGrid{
+  display: flex;
+  height: 100vh;
+  z-index: 5;
+  }
+.BGgridWidth{
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  }
+.gridWidth{
+  background: rgba(255,157,157,.3);
+  width: 1px;
+  height: 100vh;
+  }
+.gridWidthWeek{
+  background: rgba(117,255,104,.3);
+  width: 2px;
+  height: 100%;
+  color: rgb(73,151,255);
+  font-size: 1rem;
+  font-family: 'Rajdhani', sans-serif;
+  z-index: 6;
+  }
+.weekPos{
+  position: absolute;
+  transform: rotate(90deg);
+  top: 5px;
+  margin-left: 4px;
+  }
+.BGgridHeight{
+  position: absolute;
+  top: 0;
+  max-height: 100vh;
+  }
+.gridHeight{
+  margin-top: 4vw;
+  background: rgba(255,157,157,.3);
+  width: 100vw;
+  height: 1px;
+  }
+
+/* -----Animation-------*/
+
+/*animation element sliding from left*/
+.aniBlock{
+  display: inline-block;
+  z-index: 20;
+}
+.core{
+  position: absolute;
+  top: 35vh;
+  left: 40vw;
+  width: 7vw;
+  height: 7vw;
+  background: rgba(13,245,10,.4);
+  font-size: 1rem;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  color: rgba(13,245,10,0);
+  animation: bounceIn .7s linear 1;
+
+}
+.weekBox{
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  background: rgba(13,245,10,.4);
+  color: rgba(13,245,10,0);
+  font-size: 1rem;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  animation: bounceIn 1s linear 1;
+}
+.weeks{
+  color: rgba(13,245,10,1);
+}
+.one{
+  top: 5vh;
+  left: 8vw;
+}
+.two{
+  top: 55vh;
+  left: 25vw;
+}
+.three{
+  top: 8vh;
+  left: 41vw;
+}
+.four{
+  top: 70vh;
+  left: 58vw;
+}
+.five{
+  top: 23vh;
+  left: 74vw;
+}
+
+
+.Exercise{
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  background: rgba(255,245,10,.4);
+  color: rgba(255,245,10,0);
+  font-size: .8rem;
+  font-family: 'VT323', monospace;
+  text-align: left;
+  animation: bounceIn 1s linear 1;
+}
+.response{
+  visibility: hidden;
+  color: white;
+  margin-left: 3px;
+}
+.responseSecond{
+  visibility: hidden;
+  color: white;
+  margin-left: 3px;
+}
+.responseThird{
+  visibility: hidden;
+  color: white;
+  margin-left: 3px;
+}
+.responseForth{
+  visibility: hidden;
+  color: white;
+  margin-left: 3px;
+}
+.appear{
+  visibility: visible;
+}
+
+
+.WeekOneText{
+  position: absolute;
+  width: 11vw;
+  left: 4.5vw;
+  color: rgba(245, 187, 10, 1) !important;
+}
+.One{
+  margin-top: 4px;
+  top: 16vw;
+  left: 4vw;
+}
+.Two{
+  margin-top: 5px;
+  top: 20vw;
+  left: 4vw;
+}
+.Three{
+  margin-top: 6px;
+  top: 24vw;
+  left: 4vw;
+}
+.MyOne{
+  background: rgba(255, 46, 177, 0.4);
+  margin-top: 7px;
+  top: 28vw;
+  left: 4vw;
+}
+.ReadingOne{
+  background: rgba(255, 46, 177, 0.4);
+  margin-top: 8px;
+  top: 32vw;
+  left: 4vw;
+}
+
+
+
+.WeekTwoText{
+  position: absolute;
+  width: 11vw;
+  left: 4.5vw;
+  color: rgba(245, 187, 10, 1);
+}
+.Five{
+  margin-top: 5px;
+  top: 20vw;
+  left: 20vw;
+}
+.Six{
+  margin-top: 6px;
+  top: 24vw;
+  left: 20vw;
+}
+.ProOne{
+  background: rgba(54, 240, 244, 0.4);
+  margin-top: 4px;
+  top: 16vw;
+  left: 24vw;
+}
+.MyTwo{
+  background: rgba(255, 46, 177, 0.4);
+  margin-top: 3px;
+  top: 12vw;
+  left: 20vw;
+}
+.ReadingTwo{
+  background: rgba(255, 46, 177, 0.4);
+  margin-top: 3px;
+  top: 12vw;
+  left: 24vw;
+}
+.ReadingThree{
+  background: rgba(255, 46, 177, 0.4);
+  margin-top: 2px;
+  top: 8vw;
+  left: 24vw;
+}
+
+
+
+
+.WeekThreeText{
+  position: absolute;
+  width: 11vw;
+  left: 4.5vw;
+  color: rgba(245, 187, 10, 1);
+}
+.Seven{
+  margin-top: 9px;
+  top: 36vw;
+  left: 36vw;
+}
+.Eight{
+  margin-top: 10px;
+  top: 40vw;
+  left: 36vw;
+}
+.ProTwo{
+  background: rgba(54, 240, 244, 0.4);
+  margin-top: 11px;
+  top: 44vw;
+  left: 40vw;
+}
+.MyThree{
+  background: rgba(255, 46, 177, 0.4);
+  margin-top: 12px;
+  top: 48vw;
+  left: 36vw;
+}
+.ReadingFour{
+  background: rgba(255, 46, 177, 0.4);
+  margin-top: 12px;
+  top: 48vw;
+  left: 40vw;
+}
+.ReadingFive{
+  background: rgba(255, 46, 177, 0.4);
+  margin-top: 13px;
+  top: 52vw;
+  left: 40vw;
+}
+
+
+
+.WeekFourText{
+  position: absolute;
+  width: 11vw;
+  left: 4.5vw;
+  color: rgba(245, 187, 10, 1);
+}
+.Nine{
+  margin-top: 2px;
+  top: 8vw;
+  left: 52vw;
+}
+.Ten{
+  margin-top: 3px;
+  top: 12vw;
+  left: 52vw;
+}
+.Eleven{
+  margin-top: 4px;
+  top: 16vw;
+  left: 52vw;
+}
+.ProThree{
+  background: rgba(54, 240, 244, 0.4);
+  margin-top: 5px;
+  top: 20vw;
+  left: 56vw;
+}
+.MyFour{
+  background: rgba(255, 46, 177, 0.4);
+  margin-top: 6px;
+  top: 24vw;
+  left: 52vw;
+}
+.ReadingSix{
+  background: rgba(255, 46, 177, 0.4);
+  margin-top: 6px;
+  top: 24vw;
+  left: 56vw;
+}
+.ReadingSeven{
+  background: rgba(255, 46, 177, 0.4);
+  margin-top: 7px;
+  top: 28vw;
+  left: 56vw;
+}
+
+
+
+.WeekFiveText{
+  position: absolute;
+  width: 11vw;
+  left: 4.5vw;
+  color: rgba(245, 187, 10, 1);
+}
+.ProFour{
+  background: rgba(54, 240, 244, 0.4);
+  margin-top: 7px;
+  top: 28vw;
+  left: 80vw;
+}
+
+
+
+/*---pop-up---*/
+.Tip{
+  visibility: hidden;
+  width: 77px;
+  background-color: rgba(68,219,255,1);
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  border-radius: 9px;
+  position: absolute;
+  top: -50px;
+  left: 10px;
+  animation: bounceIn .7s linear 1;
+
+  }
+
+/*---hover events---*/
+.core:hover{
+  color: #fff;
+  box-shadow: 0px 0px 30px 10px rgba(255, 152, 0, .7);
+}
+.core:hover .Tip{
+  visibility: visible;
+}
+
+.One:hover .textOne, .Two:hover .textOne, .Two:hover img,.Three:hover .textOne,
+.MyOne:hover .response, .ReadingOne:hover .textOne, .ReadingOne:hover .a,
+.linkOne:hover, .linkTwo:hover, .linkThree:hover{
+  text-decoration: underline !important;
+  visibility: visible !important;
+}
+
+.Five:hover .textTwo, .Six:hover .textTwo, .ProOne:hover .textTwo,
+.MyTwo:hover .textTwo, .ReadingTwo:hover .textTwo, .ReadingThree:hover .textTwo{
+  text-decoration: underline;
+}
+
+.Seven:hover .textThree, .Seven:hover img, .Eight:hover .textThree, .ProTwo:hover .textThree,
+.MyThree:hover .textThree, .ReadingFour:hover .textThree, .ReadingFive:hover .textThree{
+  text-decoration: underline;
+  visibility: visible !important;
+
+}
+
+.Nine:hover .textFour, .Nine:hover img, .Ten:hover .textFour, .Eleven:hover .textFour, .ProThree:hover .textFour,
+.MyFour:hover .textFour, .ReadingSix:hover .textFour, .ReadingSeven:hover .textFour{
+  text-decoration: underline;
+  visibility: visible !important;
+
+}
+
+
+/*---Keyframes---*/
+@keyframes bounceIn {
+	0% {opacity:0; transform:scale(.3);}
+	50% {transform: scale(1.05);}
+	70% {transform: scale(.9);}
+	100% {opacity: 1; transform: scale(1);}
+  }

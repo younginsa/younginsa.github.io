@@ -1,0 +1,432 @@
+body{
+  margin: 0;
+  width: 2197px;
+  height: 1500px;
+}
+
+/* background Grid property*/
+.BgGrid{
+  display: flex;
+  height: 1500px;
+  z-index: 5;
+}
+.BGgridWidth{
+  display: flex;
+  justify-content: space-between;
+}
+.gridWidth{
+  margin-left: 5px;
+  background: rgba(13,245,10,.7);
+  width: 1px;
+  height: 100%;
+}
+.gridWidthYear{
+  margin-left: 5px;
+  background: rgba(13,245,10,.7);
+  width: 2px;
+  height: 100%;
+  color: rgb(73,151,255);
+  font-size: 1rem;
+  font-family: 'Rajdhani', sans-serif;
+  z-index: 6;
+  }
+.yearPos{
+  position: absolute;
+  top: 5px;
+  }
+.BGgridHeight{
+  position: absolute;
+  top: 0;
+
+}
+.gridHeight{
+  margin-top: 5px;
+  background: rgba(13,245,10,.7);
+  width: 2197px;
+  height: 1px;
+}
+
+/* -----Animation-------*/
+
+/*animation element sliding from left*/
+.aniBlock{
+  display: inline-block;
+  z-index: 20;
+}
+/*---inVeiw posistion---*/
+.AniBlock.newBorn.in-view {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+.AniBlock.age3.in-view {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+.AniBlock.brother.in-view {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+
+/*---animation slide left styled---*/
+.AniBlock.newBorn{
+  position: absolute;
+  top: 150px;
+  left: 71px;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: all 500ms linear;
+  transform: translate3d(-100px, 0px, 0px);
+  float: left;
+  background: rgba(13,245,10,.4);
+  z-index: 7;
+}
+.AniBlock.age3{
+  position: absolute;
+  top: 300px;
+  left: 102px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  opacity: 0;
+  transition: all 500ms linear;
+  transform: translate3d(-100px, 0px, 0px);
+  float: left;
+  background: rgba(13,245,10,.4);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  z-index: 7;
+}
+.AniBlock.brother{
+  position: absolute;
+  top: 500px;
+  left: 613px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  opacity: 0;
+  transition: all 500ms linear;
+  transform: translate3d(-100px, 0px, 0px);
+  float: left;
+  background: rgba(13,245,10,.4);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  z-index: 7;
+}
+.CAlife{
+  position: absolute;
+  top: 140px;
+  left: 623px;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  float: left;
+  background: rgba(13,245,10,.4);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  z-index: 7;
+  animation: bounceIn 1s linear 1;
+}
+.IMF{
+  position: absolute;
+  color: black;
+  font-size: 1rem;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  top: 1366px;
+  left: 641px;
+  z-index: 7;
+}
+.period{
+  position: absolute;
+  top: 440px;
+  left: 862px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  float: left;
+  background: rgba(255,4,4,.5);
+  z-index: 7;
+  animation: bounceIn 1s linear 1;
+}
+.Naruto{
+  position: absolute;
+  top: 136px;
+  left: 1093px;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  float: left;
+  background: rgba(4, 243, 255, 0.5);
+  z-index: 7;
+  animation: bounceIn 1s linear 1;
+}
+.Marionette{
+  position: absolute;
+  top: 156px;
+  left: 1166px;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  float: left;
+  background: rgba(4, 243, 255, 0.5);
+  z-index: 7;
+  animation: bounceIn 1s linear 1;
+}
+.Slayers{
+  position: absolute;
+  top: 856px;
+  left: 1166px;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  float: left;
+  background: rgba(4, 243, 255, 0.5);
+  z-index: 7;
+  animation: bounceIn 1s linear 1;
+}
+
+.Depression{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  float: left;
+  background: rgba(255,245,1,.7);
+  z-index: 7;
+  animation: bounceIn 1s linear 1;
+}
+.Zero{
+  top: 113px;
+  left: 1008px;
+}
+.First{
+  top: 213px;
+  left: 1081px;
+}
+.Second{
+  top: 613px;
+  left: 1081px;
+}
+.Third{
+  top: 338px;
+  left: 1154px;
+}
+.Forth{
+  top: 389px;
+  left: 1154px;
+}
+
+.married{
+  position: absolute;
+  top: 466px;
+  left: 1476px;
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+  transform: translateX(0) rotate(0deg);
+  transition: all .75s ease;
+  /* float: left; */
+  background: rgba(13,245,10,.4);
+  z-index: 7;
+}
+.married.show2 {
+  transform: translateX(597px) rotate(720deg);
+  opacity: 1;
+}
+
+.coordinate{
+  position: absolute;
+  color: black;
+  font-size: 1rem;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  z-index: 7;
+}
+.March{
+  top: 500px;
+  left: 276px;
+}
+.Vanziha{
+  top:580px;
+  left: 2028px;
+}
+.SungBook{
+  top:200px;
+  left: 2101px;
+}
+.Wedding{
+  top:504px;
+  left: 2101px;
+}
+.FourOneThree{
+  top: 900px;
+  left: 2101px;
+}
+
+
+/*---pop-up---*/
+.Tip{
+  visibility: hidden;
+  width: 77px;
+  background-color: rgba(0,206,255,.7);
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  border-radius: 9px;
+  position: absolute;
+  top: -50px;
+  left: 10px;
+  }
+
+.simson{
+  visibility: hidden;
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  width: 60px;
+  height: auto;
+
+  }
+
+/*---hover events---*/
+.yearPos:hover{
+
+}
+
+.AniBlock.newBorn:hover{
+  box-shadow: 0px 0px 30px 10px rgba(255, 152, 0, .7);
+}
+.AniBlock.newBorn:hover .Tip{
+  visibility: visible;
+  box-shadow: 0px 1px 1px 0px rgba(244, 78, 247, 1);
+}
+.AniBlock.age3:hover{
+  box-shadow: 8px 8px 5px 0px rgba(255, 152, 0, .7);
+}
+.AniBlock.age3:hover .Tip{
+  visibility: visible;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.AniBlock.brother:hover{
+  box-shadow: 8px 8px 5px 0px rgba(180, 152, 0, .7);
+}
+.CAlife:hover{
+  visibility: visible;
+  box-shadow: 4px 4px 8px 0px rgba(10, 200, 10, .7);
+}
+.CAlife:hover .Tip{
+  visibility: visible;
+  top: -60px;
+  left: 0;
+  box-shadow: 4px 4px 8px 0px rgba(10, 200, 10, .7);
+}
+.AniBlock.brother:hover .Tip{
+  visibility: visible;
+  top: -60px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.AniBlock.brother:hover .simson{
+  visibility: visible;
+}
+.period:hover{
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.period:hover .Tip{
+  visibility: visible;
+  top: -20px;
+  left: -18px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.Naruto:hover{
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.Naruto:hover .Tip{
+  visibility: visible;
+  width: 55px;
+  top: -20px;
+  left: -20px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.Marionette:hover{
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.Marionette:hover .Tip{
+  visibility: visible;
+  top: -20px;
+  left: -30px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.Slayers:hover{
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.Slayers:hover .Tip{
+  visibility: visible;
+  width: 60px;
+  top: -20px;
+  left: -30px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Depression.Zero:hover{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+}
+.Depression.Zero:hover .Tip{
+  visibility: visible;
+  width: 105px;
+  left: -32px;
+}
+.Depression.First:hover{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+}
+.Depression.First:hover .Tip{
+  visibility: visible;
+  width: 105px;
+  left: -32px;
+}
+.Depression.Second:hover{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+}
+.Depression.Second:hover .Tip{
+  visibility: visible;
+  left: -18px;
+}
+.Depression.Third:hover{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+}
+.Depression.Third:hover .Tip{
+  visibility: visible;
+  left: -18px;
+  width: 70px;
+}
+.Depression.Forth:hover{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+}
+.Depression.Forth:hover .Tip{
+  visibility: visible;
+  width: 108px;
+  top: 54px;
+  left: -33px;
+}
+.married:hover{
+  box-shadow: 8px 8px 5px 0px rgba(255, 152, 0, .7);
+}
+.married:hover .Tip{
+  visibility: visible;
+  box-shadow: 0px 0px 10px 10px rgba(244, 78, 247, .7);
+}
+
+
+/*---- animation keyframes ----*/
+@keyframes bounceIn {
+	0% {opacity:0; transform:scale(.3);}
+	50% {transform: scale(1.05);}
+	70% {transform: scale(.9);}
+	100% {opacity: 1; transform: scale(1);}
+  }
+
+@keyframes shake {
+  10%, 90% {transform: translate3d(-1px, 0, 0);}
+  20%, 80% {transform: translate3d(2px, 0, 0);}
+  30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
+  40%, 60% {transform: translate3d(4px, 0, 0);}
+}

@@ -1,0 +1,82 @@
+body{
+  display: block;
+  background-color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 22px;
+}
+
+a:visited{
+  color: inherit;
+}
+p{
+  padding: 100px;
+  font-family: helvetica;
+  font-size: 1rem;
+  color: blue;
+}
+.TopNum{
+  display: block;
+	font-family: helvetica;
+	font-size: 2rem;
+	text-align: right;
+}
+#main{
+	position: absolute;
+	top: 22px;
+	left: 15px;
+	text-decoration: none;
+	color: blue;
+}
+#menu_1{
+	top: 22px;
+	right: 8rem;
+	text-decoration: none;
+	color: blue;
+}
+#menu_2{
+	top: 22px;
+	right: 6rem;
+	text-decoration: none;
+	color: blue;
+}
+#menu_3{
+	top: 22px;
+	right: 4rem;
+	text-decoration: none;
+	color: blue;
+}
+#menu_4{
+	top: 22px;
+	right: 2rem;
+	text-decoration: none;
+	color: blue;
+}
+
+#pattern{
+  margin-top: 5rem;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: 10rem ;
+  width: 19%;
+}
+
+@media only screen and (max-width:800px){
+  p{
+    text-align: center;
+    font-family: helvetica;
+    margin-top: 17vh;
+    margin-bottom: 36vh;
+    font-size: 7vw;
+    color: blue;
+  }
+  #pattern{
+    margin-top: 5rem;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+}

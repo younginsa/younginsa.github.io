@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JSON Demo_sa</title>
+<!--     <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--     <script type="text/javascript" src="article_api.js"></script> -->
+
+	<script>
+	// Built by LucyBot. www.lucybot.com
+	var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+	url += '?' + $.param({
+	  'api-key': "0a496657f3f0437fae3724a0cb1d7bd3",
+	  'q': "yellow dust",
+	  'fq': "korea"
+	});
+	$.ajax({
+	  url: url,
+	  method: 'GET',
+	}).done(function(result) {
+	  console.log(url);	
+	  console.log(result);
+	}).fail(function(err) {
+	  throw err;
+	});
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>
