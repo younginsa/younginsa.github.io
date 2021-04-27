@@ -1,0 +1,1060 @@
+:root{
+  --main-gold-color: #C9AB88;
+  --main-black-color: #222222;
+}
+
+
+body{
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+
+h2{
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+
+#title{
+  margin-top: 40px;
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 3rem;
+  color: #222222;
+  display: flex;
+  justify-content: center;
+}
+
+#follower{
+  position: absolute;
+  float: left;
+  width: 100px;
+  height: 100px;
+  filter: blur(30px);
+  border-radius: 50%;
+  background: radial-gradient(#ffffff, #ffffff00 50%);
+  z-index: 5;
+}
+
+.skip{
+  color: #000000c7;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 150px;
+  padding: 10px 0;
+  border: 1px solid #000000c7;
+}
+
+.surveyContainer{
+  width: 99vw;
+  position: absolute;
+  bottom: 2vh;
+  display: block;
+}
+
+.surveyRow{
+  display: flex;
+  justify-content: center;
+}
+
+.survey{
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin: 2vw;
+  background:
+    linear-gradient(to top left,
+        rgba(0,0,0,0) calc(50% - 0.8px),
+        #c9ab884a 50%,
+        rgba(0,0,0,0) calc(50% + 0.8px),
+        rgba(0,0,0,0) 100%),
+    linear-gradient(to top right,
+         rgba(0,0,0,0) 0%,
+         rgba(0,0,0,0) calc(50% - 0.8px),
+         #c9ab884a 50%,
+         rgba(0,0,0,0) calc(50% + 0.8px),
+         rgba(0,0,0,0) 100%);
+}
+
+.survey:hover .cover{
+  visibility: visible;
+}
+
+.circle{
+ position: absolute;
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ border: 1px solid var(--main-gold-color);
+ overflow: hidden;
+}
+
+.Onerect{
+  position: relative;
+  top: 15px;
+  /* left: 15px; */
+  width: 70px;
+  height: 70px;
+  transition: all 1s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+.rectTrans{
+  transform: matrix(1.45, 0, 0, 1.45, 0, 0) !important;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+
+/* #1 Geometry */
+.circleOne{
+ position: absolute;
+ margin: 15px 0px 0px 28px;
+ width: 100px;
+ height: 100px;
+ overflow: hidden;
+}
+
+.circleOne:before {
+ position: absolute;
+ /* margin: 15%; */
+ width: 70%;
+ height: 70%;
+ border-radius: 50%;
+ border: 1px solid var(--main-gold-color);
+ content: '';
+}
+
+.circleOne .cover {
+  visibility: hidden;
+  position: relative;
+  /* margin-top: 15%; */
+  margin-left: -65%;
+/*   margin-left: 50%; */
+  width: 200%;
+  height: inherit;
+  transform-origin: 50% 0;
+/*   transform-origin: 50% 0; */
+  background: white;
+  animation: revealCircle 1s cubic-bezier(0.76, 0, 0.31, 0.98) infinite forwards;
+}
+
+@keyframes revealCircle {
+  30%, 100% { opacity: 1;}
+  0%, 20%   { opacity: 1;
+              transform: rotate(-360deg);
+            }
+          }
+
+#myRectAngled{
+  transform: rotate(45deg);
+  background:
+    linear-gradient(to top left,
+        rgba(0,0,0,0) calc(50% - 0.8px),
+        var(--main-gold-color) 50%,
+        rgba(0,0,0,0) calc(50% + 0.8px),
+        rgba(0,0,0,0) 100%),
+    linear-gradient(to top right,
+         rgba(0,0,0,0) 0%,
+         rgba(0,0,0,0) calc(50% - 0.8px),
+         var(--main-gold-color) 50%,
+         rgba(0,0,0,0) calc(50% + 0.8px),
+         rgba(0,0,0,0) 100%);
+}
+
+
+
+/* #2 Geometry */
+.circleTwo{
+ position: absolute;
+ width: 30px;
+ height: 100px;
+ border-radius: 50%;
+ border: 1px solid var(--main-gold-color);
+ transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+ z-index: 5;
+}
+
+.circleThree{
+ visibility: hidden;
+ margin: 0px -16px 0px -16px;
+ width: 30px;
+ height: 100px;
+ border-radius: 50%;
+ border: 1px solid var(--main-gold-color);
+ transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+ z-index: 5;
+}
+
+#edge{
+  margin: 0px -16px 0px -16px !important;
+}
+
+.pearlTop{
+  visibility: visible;
+  margin: -5px 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--main-gold-color);
+  z-index: 10;
+}
+
+.pearlBottom{
+  visibility: visible;
+  margin: 95px 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--main-gold-color);
+  z-index: 10;
+}
+
+#sTwo:hover > .circleThree{
+  visibility: visible;
+  margin: 0px -5px 0px -5px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+
+/* #3 Geometry */
+#sThree:hover > .angledhL{
+  visibility: visible;
+  transform: rotate(-45deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sThree:hover > #angLine{
+  transform: rotate(45deg)
+}
+
+.Line{
+  position: absolute;
+  border-left: 1px solid var(--main-gold-color);
+  height: 100px;
+}
+
+#horiL{
+  transform: rotate(-90deg);
+}
+
+.angledhL{
+  visibility: hidden;
+  transform: rotate(90deg);
+  position: absolute;
+  margin-top: 50px;
+  border-top: 1px solid var(--main-gold-color);
+  width: 100px;
+}
+
+
+/* #4 Geometry */
+#sFour{
+  display: inline-block;
+}
+.horiCirTwo{
+ position: absolute;
+ margin-top: 35px;
+ width: 100px;
+ height: 30px;
+ border-radius: 50%;
+ border: 1px solid var(--main-gold-color);
+ transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+ z-index: 5;
+}
+
+.horiCirThree{
+ visibility: hidden;
+ margin: 35px 0px -67px 0px;
+ width: 100px;
+ height: 30px;
+ border-radius: 50%;
+ border: 1px solid var(--main-gold-color);
+ transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+ z-index: 5;
+}
+
+.pearlLeft{
+  visibility: visible;
+  margin: 10px -6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--main-gold-color);
+  z-index: 10;
+}
+
+.pearlRight{
+  visibility: visible;
+  margin: 10px 94px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--main-gold-color);
+  z-index: 10;
+}
+
+#horibottom{
+  margin-top:35px;
+}
+
+#sFour:hover > #horitop{
+  margin: 12px 0px -20px 0px;
+}
+
+#sFour:hover > .horiCirThree{
+  visibility: visible;
+  margin: 0px 0px -9px 0px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sFour:hover > #horiMid{
+  margin-bottom: -20px;
+}
+
+#sFour:hover > #horibottom{
+  margin: 0px 0px 0px 0px;
+}
+
+
+/* #5 Geometry */
+#sFive:hover > #anLeft{
+  transform: rotate(45deg);
+}
+#sFive:hover > #anRight{
+  transform: rotate(-45deg);
+}
+
+/* #6 Geometry */
+#sSix >.circleTwo{
+ position: absolute;
+ margin-top: 10px;
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+ border: 1px solid var(--main-gold-color);
+ transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+ z-index: 5;
+}
+
+#sSix >.circleThree{
+ visibility: hidden;
+ margin: 10px 0px 0px 0px;
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+ border: 1px solid var(--main-gold-color);
+ transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+ z-index: 5;
+}
+
+#sSix >#edgeCir{
+  margin: 10px -81px 0px -81px;
+}
+
+#sSix >#edgeMid{
+  margin: 10px -1px 0px -83px;
+}
+
+#sSix:hover > .circleThree{
+  visibility: visible;
+  margin: 10px -38px 0px -44px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sSix:hover > #edgeCir{
+  margin: 10px -53px 0px -38px;
+}
+
+#sSix:hover > #edgeMid{
+  margin: 10px -30px 0px 0px;
+}
+
+/* #7 Geometry */
+#sSeven >.circleTwo{
+ position: absolute;
+ margin-top: 10px;
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+ border: 1px solid var(--main-gold-color);
+ transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+ z-index: 5;
+}
+
+#sSeven >.circleThree{
+ visibility: hidden;
+ margin: 10px 0px 0px 0px;
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+ border: 1px solid var(--main-gold-color);
+ transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+ z-index: 5;
+}
+
+#sSeven >#edgeCir{
+  margin: 10px -81px 0px -81px;
+}
+
+#sSeven >#edgeMid{
+  margin: 10px -1px 0px -83px;
+}
+
+#sSeven:hover > .circleThree{
+  visibility: visible;
+  transform: rotateY(145deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sSeven:hover > #edgeCir{
+  transform: rotateY(55deg);
+}
+
+#sSeven:hover > #edgeMid{
+  transform: rotateY(75deg);
+}
+
+/* #8 Geometry */
+#sEight >.circleTwo{
+ position: absolute;
+ margin-top: 25px;
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ border: 1px solid var(--main-gold-color);
+ transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+ z-index: 5;
+}
+
+.circleLeft{
+ position: absolute;
+ visibility: hidden;
+ margin-top: 25px;
+ /* margin-right: 50px; */
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ border: 1px solid var(--main-gold-color);
+ transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+ z-index: 5;
+}
+
+.circleRight{
+ position: absolute;
+ visibility: hidden;
+ margin-top: 25px;
+ /* margin-left: 50px; */
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ border: 1px solid var(--main-gold-color);
+ transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+ z-index: 5;
+}
+
+#sEight:hover > #circleTop{
+  margin-top: 0px;
+}
+
+#sEight:hover > #circlebottom{
+  margin-top: 50px;
+}
+
+#sEight:hover > .circleLeft{
+  visibility: visible;
+  margin-right: 50px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sEight:hover > .circleRight{
+  visibility: visible;
+  margin-left: 50px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+/* #9 Geometry */
+#sNine>.HoriL{
+  visibility: hidden;
+  transform: rotate(90deg);
+  position: absolute;
+  border-right: 1px solid var(--main-gold-color);
+  margin-top: 10px;
+  height: 80px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sNine:hover>.HoriL{
+  visibility: visible;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sNine:hover>#LZero{
+  margin-top: -30px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sNine:hover>#Lone{
+  margin-top: -27px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sNine:hover>#LTwo{
+  margin-top: -22px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sNine:hover>#LThree{
+  margin-top: -10px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sNine:hover>#LFive{
+  margin-top: 30px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sNine:hover>#LSix{
+  margin-top: 42px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sNine:hover>#LSeven{
+  margin-top: 48px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sNine:hover>#LEight{
+  margin-top: 50px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+/* #10 Geometry */
+#sTen{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  /* transform: translateY(30%); */
+}
+
+.circlePulse{
+  width: 36px;
+  height: 36px;
+  margin-top: 30%;
+  border-radius: 50%;
+  border: 2px solid var(--main-gold-color);
+  transition: all .3s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+@-webkit-keyframes pulse {
+  0%{-webkit-transform:scale(0.1,.1);opacity:0}
+  50%{opacity:1}
+  100%{-webkit-transform:scale(1.5,1.5);opacity:0}
+}
+
+#sTen:hover > .circlePulse{
+  transform: scale(0);
+  opacity:0;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTen:hover [class*=pulse_] {
+  border: 2px solid var(--main-gold-color);
+  -webkit-border-radius: 40px;
+  height: 36px;
+  width: 36px;
+  margin-top: 30%;
+  position: absolute;
+  -webkit-animation: pulse 1s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  animation: pulse 1s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+#sTen [class*=pulse_].pulse_1 {
+  animation-delay: .3s;
+  -webkit-animation-delay: .3s;
+}
+
+/* #11 Geometry */
+#sEleven{
+  transform: rotate(90deg);
+}
+#sEleven >.circleTwo{
+ position: absolute;
+ margin-top: 10px;
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+ border: 1px solid var(--main-gold-color);
+ transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+ z-index: 5;
+}
+
+#sEleven >.circleThree{
+ visibility: hidden;
+ margin: 10px 0px 0px 0px;
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+ border: 1px solid var(--main-gold-color);
+ transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+ z-index: 5;
+}
+
+#sEleven >#edgeCir{
+  margin: 10px -81px 0px -81px;
+}
+
+#sEleven >#edgeMid{
+  margin: 10px -1px 0px -83px;
+}
+
+#sEleven:hover > .circleThree{
+  visibility: visible;
+  margin: 10px -38px 0px -44px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sEleven:hover > #edgeCir{
+  margin: 10px -53px 0px -38px;
+}
+
+#sEleven:hover > #edgeMid{
+  margin: 10px -30px 0px 0px;
+}
+
+/* #12 Geometry */
+#sTwelve>.HoriL{
+  visibility: visible;
+  transform-origin: bottom;
+  transform: rotate(0deg);
+  position: absolute;
+  border-right: 1px solid var(--main-gold-color);
+  margin-top: 10px;
+  margin-right: 90px;
+  height: 80px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTwelve:hover>#Lone{
+  transform: rotate(11.25deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTwelve:hover>#LTwo{
+  transform: rotate(22.5deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTwelve:hover>#LThree{
+  transform: rotate(33.75deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTwelve:hover>#LFour{
+  transform: rotate(45deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTwelve:hover>#LFive{
+  transform: rotate(56.25deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTwelve:hover>#LSix{
+  transform: rotate(67.5deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTwelve:hover>#LSeven{
+  transform: rotate(78.75deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sTwelve:hover>#LEight{
+  transform: rotate(90deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+
+/* #13 Geometry */
+#sThirteen{
+  transform: rotate(0deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+#sThirteen >.circle{
+  visibility: hidden;
+  position: absolute;
+  margin-top: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--main-gold-color);
+  z-index: 5;
+}
+
+#sThirteen>.pearlLeft{
+  position: absolute;
+  margin-right: 90px;
+  margin-left: 0px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--main-gold-color);
+  z-index: 10;
+}
+
+#sThirteen>.pearlRight{
+  position: absolute;
+  margin-right: 0px;
+  margin-left: 90px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--main-gold-color);
+  z-index: 10;
+}
+
+#pTop{
+  margin-top: 0px;
+}
+
+#pbottom{
+  margin-top: 90px;
+}
+
+.pRect{
+  visibility: hidden;
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  background:
+    linear-gradient(to top left,
+        rgba(0,0,0,0) calc(50% - 0.8px),
+        var(--main-gold-color) 50%,
+        rgba(0,0,0,0) calc(50% + 0.8px),
+        rgba(0,0,0,0) 100%),
+    linear-gradient(to top right,
+         rgba(0,0,0,0) 0%,
+         rgba(0,0,0,0) calc(50% - 0.8px),
+         var(--main-gold-color) 50%,
+         rgba(0,0,0,0) calc(50% + 0.8px),
+         rgba(0,0,0,0) 100%);
+}
+
+#sThirteen:hover{
+  transform: rotate(180deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sThirteen:hover > .circle{
+  visibility: visible;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sThirteen:hover > .pRect{
+  visibility: visible;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+/* #14 Geometry */
+#sFourteen>.circle{
+  position: absolute;
+  margin-top: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--main-gold-color);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+  z-index: 5;
+}
+
+#cTwo{
+  margin-right: 20px;
+}
+
+#cThree{
+  margin-left: 20px;
+}
+
+#sFourteen:hover > .circle{
+  margin-top: 40px;
+  margin-right: 50px;
+  margin-left: 4px;
+}
+
+#sFourteen:hover > #cTwo{
+  margin-top: 5px !important;
+  margin-right: 10px;
+}
+#sFourteen:hover > #cThree{
+  margin-left: 40px;
+  margin-right: 5px;
+}
+
+/* #15 Geometry */
+#sFifthteen{
+  transform: rotate(45deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sFifthteen:hover{
+  transform: rotate(135deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sFifthteen:hover> #RectOne{
+  visibility: visible !important;
+  transform: rotate(45deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sFifthteen:hover> #RectTwo{
+  visibility: visible !important;
+  transform: rotate(65deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+
+#sFifthteen>.pearlLeft{
+  position: absolute;
+  margin-right: 70px;
+  margin-left: 0px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--main-gold-color);
+  z-index: 10;
+}
+
+#sFifthteen>.pearlRight{
+  position: absolute;
+  margin-right: 0px;
+  margin-left: 70px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--main-gold-color);
+  z-index: 10;
+}
+
+#sFifthteen>#pTop{
+  margin-top: 12px;
+}
+
+#sFifthteen>#pbottom{
+  margin-top: 82px;
+}
+
+#sFifthteen>.pRect{
+  visibility: visible;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  margin: 15px;
+  border: 1px solid var(--main-gold-color);
+  background: none;
+}
+
+/* #16 Geometry */
+#sSixteen>.pearlLeft{
+  position: absolute;
+  margin: 45px 70px 0px 0px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--main-gold-color);
+  z-index: 10;
+}
+
+#sSixteen>.pearlRight{
+  position: absolute;
+  margin: 45px 0px 0px 70px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--main-gold-color);
+  z-index: 10;
+}
+
+#sSixteen >.circle{
+  visibility: hidden;
+  position: absolute;
+  margin-top: 15px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid var(--main-gold-color);
+  z-index: 5;
+}
+
+.HoriL{
+  visibility: hidden;
+  transform: rotate(90deg);
+  position: absolute;
+  border-right: 1px solid var(--main-gold-color);
+  margin: 15px;
+  height: 70px;
+}
+
+#sSixteen:hover{
+  transform: rotate(180deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sSixteen:hover>.circle{
+  visibility: visible;
+}
+
+#sSixteen:hover>.HoriL{
+  visibility: visible;
+}
+
+/* #17 Geometry */
+#sSeventeen{
+  transform: rotate(90deg);
+}
+
+#sSeventeen>.HoriL{
+  visibility: hidden;
+  transform: rotate(90deg);
+  position: absolute;
+  border-right: 1px solid var(--main-gold-color);
+  margin-top: 10px;
+  height: 80px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sSeventeen:hover>.HoriL{
+  visibility: visible;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sSeventeen:hover>#LZero{
+  margin-top: -30px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sSeventeen:hover>#Lone{
+  margin-top: -27px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sSeventeen:hover>#LTwo{
+  margin-top: -22px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sSeventeen:hover>#LThree{
+  margin-top: -10px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sSeventeen:hover>#LFive{
+  margin-top: 30px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sSeventeen:hover>#LSix{
+  margin-top: 42px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sSeventeen:hover>#LSeven{
+  margin-top: 48px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sSeventeen:hover>#LEight{
+  margin-top: 50px;
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+/* #18 Geometry */
+#sEighteen{
+  transform: rotate(90deg);
+}
+
+#sEighteen >.circleTwo{
+ position: absolute;
+ margin-top: 10px;
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+ border: 1px solid var(--main-gold-color);
+ transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+ z-index: 5;
+}
+
+#sEighteen >.circleThree{
+ visibility: hidden;
+ margin: 10px 0px 0px 0px;
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+ border: 1px solid var(--main-gold-color);
+ transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+ z-index: 5;
+}
+
+#sEighteen >#edgeCir{
+  margin: 10px -81px 0px -81px;
+}
+
+#sEighteen >#edgeMid{
+  margin: 10px -1px 0px -83px;
+}
+
+#sEighteen:hover > .circleThree{
+  visibility: visible;
+  transform: rotateY(145deg);
+  transition: all .5s cubic-bezier(0.76, 0, 0.31, 0.98);
+}
+
+#sEighteen:hover > #edgeCir{
+  transform: rotateY(55deg);
+}
+
+#sEighteen:hover > #edgeMid{
+  transform: rotateY(75deg);
+}
+
+
+
+#count{
+  color: white;
+  font-size: 3rem;
+  position: relative;
+  top: 50%;
+  left: 40%;
+}
+
+.survey:hover #colored{
+  opacity: 1;
+}
+
+.survey:hover #colored3{
+  opacity: 1;
+}
+
+#colored{
+  display: inline-block;
+  background-image: linear-gradient(var(--main-black-color),var(--main-gold-color));
+  height: 100px; width:100px;
+  opacity: 0;
+  /* transition: all 1s ease; */
+}
+
+#colored3{
+  display: inline-block;
+  background-image: linear-gradient(var(--main-black-color),var(--main-gold-color));
+  height: 100px; width:100px;
+  opacity: 0;
+  /* transition: all 1s ease; */
+}
